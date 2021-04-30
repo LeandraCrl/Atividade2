@@ -18,14 +18,15 @@ const [informacoes, setInformacoes] = useState({
     gia: '2669',
     ddd: '11',
     siafi: '6551'
-
 });
+}
 const getInformacoes = () => {
     axios.get('http://viacep.com.br/ws/06693290/json/')
     then(response => {
     setInformacoes(response.data);
 
   });
+}
 
 {
   return (
